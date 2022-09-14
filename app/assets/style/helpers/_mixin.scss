@@ -1,9 +1,0 @@
-@mixin text-gradient {
-  color: transparent;
-  background: linear-gradient($secondary, $primary);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-
-
