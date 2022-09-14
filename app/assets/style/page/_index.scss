@@ -1,0 +1,195 @@
+//banner
+.banner {
+    background-color: $gray-800;
+    background: url('../images/bg_home.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.banner-inner {
+    height: calc(100vh - 90px);
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+}
+
+.text-gradient {
+    color: transparent;
+    background: linear-gradient($secondary, $primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+//course
+
+.under-line {
+    &::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        background-color: #62DB54;
+    }
+}
+
+.under-line-center {
+    &::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+        background-color: #62DB54;
+        transform: translateX(-50%);
+    }
+}
+
+.course-list {
+    color: $white;
+    opacity: 0.5;
+    border: $light 1px solid;
+
+    &:hover {
+        opacity: 1;
+        background-color: $gray-600;
+        border-radius: 20px;
+        border: $primary 1px solid;
+
+        .material-icons {
+            @include text-gradient;
+        }
+    }
+
+}
+
+//process
+
+.process-list {
+    border: 2px $white solid;
+    border-radius: 20px;
+
+}
+
+.number {
+    color: $primary;
+    padding-left: 10px;
+    width: 80px;
+    height: 56px;
+    position: absolute;
+    left: 13%;
+    top: -30px;
+    background-color: $dark-gray;
+}
+
+//skill swiper
+
+.skill-item {
+    color: $white;
+    border: 2px $white solid;
+    border-radius: 10px;
+    background-color: $light;
+}
+
+//price
+
+.card-item {
+    border-radius: 20px;
+    border: 2px $light solid;
+
+    &:hover {
+        border: 2px $primary solid;
+    }
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.card-title {
+    height: 50px;
+    overflow: hidden;
+    display: -webkit-box;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.btn {
+    background: linear-gradient(to right, $secondary, $primary);
+    border-radius: 10px;
+}
+
+//feature
+
+.feature-item {
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $gray-600;
+        opacity: 0.9;
+        transition: all .3s ease-in;
+        z-index: 1;
+    }
+
+    &:hover:before {
+        opacity: 0.2;
+    }
+}
+
+.feature-img {
+    object-fit: cover;
+    height: 615px;
+    width: 100%;
+}
+
+.inner-text {
+    padding: 215px 48px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+    .material-icons {
+        width: 30px;
+        height: 30px;
+        color: $white;
+    }
+}
+
+.under-line-fu {
+    &::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        background-color: $white;
+
+    }
+}
+
+//blog
+
+.card-list{
+    border: 1px $dark solid;
+    background-color: $dark;
+}
+
+.card-title{
+    height: 36px;
+}
+
+
+
+
+

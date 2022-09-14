@@ -1,0 +1,13 @@
+.gradient-x{
+  @include gradient-x;
+}
+
+.gradient-y{
+  @include gradient-y;
+}
+
+.text-gradient-y{
+  @include gradient-y;
+  background-clip: text;
+  color: transparent;
+}
